@@ -1,0 +1,299 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "OracleSansVF", "OracleSansVFCyGr", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", sans-serif;
+}
+
+:root 
+{
+    --link-color: #00688C;
+    --blue-color: #3a75b0;
+    --white-color:#ffffff;
+    --whitesmoke-color:whitesmoke;
+    --grey-color:grey;
+}
+
+a 
+{
+    color: var(--link-color);
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+a:hover 
+{
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+.header
+{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blue-color);
+    color: var(--white-color);
+}
+
+.navigation 
+{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--whitesmoke-color);
+    gap: 40px;
+}
+
+.logo 
+{
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.main 
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.start-container
+{
+    width: 100%;
+    height: auto;
+    background-color: var(--link-color);
+    color: var(--white-color);
+    padding: 120px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.start-container a
+{
+    color: var(--whitesmoke-color);
+}
+
+.start-title
+{
+    padding: 10px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.start-text
+{
+    padding: 10px;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.main-container 
+{
+    width: 100%;
+    height: auto;
+    background-color: var(--whitesmoke-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 60px;
+    padding: 120px 0;
+}
+
+.python-section , .batch-section
+{
+    width: auto;
+    max-width: 500px;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    background-color: var(--white-color);
+    border: 1px solid var(--grey-color);
+}
+
+.section-title 
+{
+    font-size: 24px;
+    font-weight: 400;
+    padding: 10px 0;
+}
+
+.section-text 
+{
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.section-links 
+{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 0;
+}
+
+.read-container 
+{
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+.where-container 
+{
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+    padding: 10px;
+}
+
+.title 
+{
+    font-size: 24px;
+    padding: 10px 0;
+}
+
+.text 
+{
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+.image 
+{
+    width: 100%;
+    min-height: 100px;
+    background-color: var(--whitesmoke-color);
+    border-radius: 10px;
+    border: 1px solid var(--grey-color);
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--grey-color);
+    margin:  10px 0;
+}
+
+.space 
+{
+    width: 100%;
+    height: 100px;
+}
+
+.read-help 
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 0;
+}
+
+.footer
+{
+    width: 100%;
+    height: auto;
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--whitesmoke-color);
+}
+
+.footer-links 
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+@media screen and (max-width: 600px) {
+
+    .header 
+    {
+        height: 80px;
+    }
+
+    .navigation
+    {
+        display: none;
+    }
+
+    .start-text
+    {
+        text-align: center;
+    }
+    .main-container 
+    {
+        flex-direction: column;
+    } 
+    .python-section , .batch-section 
+    {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-text
+    {
+        text-align: center;
+    }
+
+    .section-links
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        text-align: center;
+        flex-direction: initial;
+        gap: 20px;
+    }
+
+    .footer 
+    {
+        padding: 20px;
+    }
+
+    .footer-links 
+    {
+        flex-wrap: wrap;
+    }
+
+    .read-container , .where-container
+    {
+        padding: 0 40px;
+    }
+
+}

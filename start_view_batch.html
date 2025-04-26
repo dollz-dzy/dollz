@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dollz | Start_view</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            Dollz
+        </div>
+    </header>
+    <nav class="navigation">
+        <a href="index.html">Home</a>
+        <a href="python_files.html">Python files</a>
+        <a href="batch_files.html">Batch files</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <main class="main">
+        <div class="space"></div>
+        <div class="where-container">
+            <a href="index.html">Home</a> 
+            >
+            <a href="start_view_batch.html">Start_view</a>
+        </div>
+        <div class="read-container">
+            <div class="read-help">
+                <div class="title">In aceasta pagina</div>
+                <a href="#s1">Despre</a>
+                <a href="#s2">Descarcare</a>
+                <a href="#s3">Codul sursa</a>
+            </div>
+            <div class="title" id="s1">
+                Despre Start_view
+            </div>
+            <p class="text">
+                Este primul fisier .bat aparut pe site acesta permite userilor prin cmd sa mearga in anumite programe/foldere pentru a accesa info si programe pentru start
+            </p>
+            <div class="text">
+                Precum folderul /startup si alte programe windows
+            </div>
+            <div class="title" id="s2">Descarcare</div>
+            <div class="text">
+                Puteti instala programul prin urmatoarele link-uri
+            </div>
+            <div class="text">
+                <a href="https://mega.nz/file/Y7F3XJjR#REEgu1QAdKC2uNPgv_QNMf-xsBzPTU0SaNNvNwjLL8o">Mega (2kb)</a>
+            </div>
+            <div class="title" id="s3">Codul sursa</div>
+            <div class="text">
+                Acesta este un program mic deci codul sursa este disponibil
+            </div>
+            <div class="text">
+                ::=============================== :: :: Dollz_dzy pe github :: start_view.bat :: ::=============================== @echo off :: Colectam cateva variabile set username=%USERNAME% :meniu cls echo Bun venit %username%! echo. echo [ exit ] Exit [ info ] Info echo. echo [ 1 ] Deschide taskmgr echo [ 2 ] Deschide folderul startup echo [ 3 ] Deschide msconfig echo [ 4 ] Deschide services.msc echo [ 5 ] Deschide taskschd.msc echo. :: Setam pormptul set /p input=[ %username% ] : ::Aici is cateva conditi pentru fiecare alegere a userului if /i "%input%"=="1" ( cls start taskmgr goto meniu ) else if /i "%input%"=="2" ( cls start shell:startup goto meniu ) else if /i "%input%"=="3" ( cls start msconfig goto meniu ) else if /i "%input%"=="4" ( cls start services.msc goto meniu ) else if /i "%input%"=="5" ( cls start taskschd.msc goto meniu ) else if /i "%input%"=="exit" ( cls echo Scriptul se inchide.La revedere %username%! timeout /t 2 >nul exit /b ) else if /i "%input%"=="info" ( cls echo [ Info ] [ version 1.0 ] echo. echo Bun venit pe start_view unde puteti accesa diferite locati/programe legate de startup. echo Sper ca va fi de folos. echo. pause goto meniu ) else ( cls echo Comanda necunoscuta. echo. echo Daca nu intelegi cum functioneaza teas ruga sa alegi o optiune din [] precum [ 1 ] sau [ exit ]. pause goto meniu ) :: facut in 4/26/2025
+            </div>
+            <div class="text">
+                Codul sursa poate uneori sa apara ciudat ,deoarace acesta nu e destinat pentru a fi download-dat si vizualizat doar.
+            </div>
+            <div class="space"></div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="python_files.html">Python files</a>
+            <a href="batch_files.html">Batch files</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </footer>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>
